@@ -47,7 +47,7 @@ javascript:(function() {
   window.addEventListener('mouseout', highlighter);
   window.addEventListener('keydown', function(event) {
     if (event.keyCode === 27 || event.which === 27) {
-      console.log(event);
+      // console.log(event);
       window.removeEventListener('keydown', eraser); 
       window.removeEventListener('keydown', highlighter);
     }
