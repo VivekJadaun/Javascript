@@ -42,13 +42,13 @@ window.addEventListener('load', function () {
 
 
 javascript:(function() {
-        window.addEventListener('click', eraser);
+  window.addEventListener('click', eraser);
   window.addEventListener('mouseover', highlighter);
   window.addEventListener('mouseout', highlighter);
   window.addEventListener('keydown', function(event) {
-          if (event.keyCode === 27 || event.which === 27) {
+    if (event.keyCode === 27 || event.which === 27) {
       // console.log(event);
-    window.removeEventListener('keydown', eraser); 
+      window.removeEventListener('keydown', eraser);
       window.removeEventListener('keydown', highlighter);
     }
   }); 
